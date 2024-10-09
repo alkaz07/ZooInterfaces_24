@@ -2,16 +2,18 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        //example1();
-        example2WithDucks();
+        example1();
+        //example2WithDucks();
     }
 
     private static void example2WithDucks() {
         Duck donald = new Duck("Дональд",6,50);
         Duck zigzag = new Duck("Зигзаг МакКряк", 7, 70);
+        Sokol sokol = new Sokol("Сокол", 2, 30);
         Eagle orel = new Eagle("Орел-1", 7, 200);
         Penguin skiper = new Penguin("Шкипер", 4, 50);
-        Animal[] animals = {donald, zigzag, orel, skiper};
+        Animal[] animals = {donald, zigzag, orel, skiper, sokol};
+
 
 
         IFlyer[] flyers = {donald, zigzag, orel};
@@ -36,8 +38,10 @@ public class Main {
         Crocodile gena = new Crocodile("Гена", 12, 230);
         Penguin lolo = new Penguin("Лоло", 1, 10);
         Eagle gorgo = new Eagle("Горго", 4, 150);
+        Sokol sokol = new Sokol("Сокол", 2, 30);
+        Dog sobaka = new Dog("пёс", 5);
 
-        Animal[] animals = {gena, gorgo, lolo};
+        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka};
         for (Animal a : animals)
             a.move();
 
