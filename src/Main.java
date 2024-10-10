@@ -3,18 +3,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 //        example1();
-        //example2WithDucks();
-        example12();
-    }
-
-    private static void example12() {
-        Duck duck = new Duck("Кряк", 1, 1);
-        Eagle eagle1 = new Eagle("Орлан", 10, 120);
-        Ostrich straus = new Ostrich("Дылда с маоенькой головой", 10, 90, 250);
-        Bird[] birds = {duck, eagle1, straus };
-        for (Bird b: birds) if(b instanceof IWalker) System.out.println(b);
+        example2WithDucks();
 
     }
+
 
     private static void example2WithDucks() {
         Duck donald = new Duck("Дональд",6,50);
