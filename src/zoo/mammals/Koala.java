@@ -3,7 +3,7 @@ package zoo.mammals;
 import zoo.Animal;
 import zoo.IWalker;
 
-public class Koala extends Animal implements IWalker {
+public class Koala extends Mammal implements IWalker {
     public Koala(String name, int age) {
         super(name, age);
     }

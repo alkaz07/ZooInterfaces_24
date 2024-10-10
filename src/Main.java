@@ -13,12 +13,15 @@ import zoo.reptiles.Crocodile;
 import zoo.birds.Bird;
 
 import java.util.Arrays;
-
+//1)
+//каждому добавить по классу рептилий или рыб или насекомых
+//2)
+//свой класс млекопитающего исправить, чтобы он наследовал Mammal а не Animal
 public class Main {
     public static void main(String[] args) {
-       // example1();
-       // example2WithDucks();
-       // example12();
+        example1();
+        example2WithDucks();
+        example12();
         example1010();
     }
 
