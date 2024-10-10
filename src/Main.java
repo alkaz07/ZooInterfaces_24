@@ -1,17 +1,7 @@
-import zoo.Animal;
-import zoo.IDiver;
-import zoo.IFlyer;
-import zoo.IWalker;
+import zoo.*;
 import zoo.birds.*;
-import zoo.mammals.Bear;
-import zoo.mammals.Dog;
-import zoo.mammals.Kaban;
-import zoo.mammals.Koala;
+import zoo.mammals.*;
 import zoo.reptiles.Crocodile;
-
-
-
-import zoo.birds.Bird;
 
 import java.util.Arrays;
 //1)
@@ -38,7 +28,7 @@ public class Main {
         Eagle eagle1 = new Eagle("Орлан", 10, 120);
         Ostrich straus = new Ostrich("Дылда с маоенькой головой", 10, 90, 250);
         Flamingo flamingo = new Flamingo("Фламинго",8,180,"Розовый");
-        Bird[] birds = {duck, eagle1, straus, flamingo };
+        Bird[] birds = {duck, eagle1, straus, flamingo};
         for (Bird b: birds) if(b instanceof IWalker) System.out.println(b);
 
     }
@@ -52,12 +42,12 @@ public class Main {
         //
         Seagull skattl = new Seagull("Скаттл",5,50);
         Flamingo flamingo = new Flamingo("Фламинго",8,180,"Розовый");
+        Hawk hawk = new Hawk("Зоркий глаз", 4, 200);
         //
-        Animal[] animals = {donald, zigzag, orel, skiper, sokol,skattl,flamingo};
+        Animal[] animals = {donald, zigzag, orel, skiper, sokol, skattl, flamingo, hawk};
 
 
-
-        IFlyer[] flyers = {donald, zigzag, orel,skattl,flamingo};
+        IFlyer[] flyers = {donald, zigzag, orel, skattl, flamingo, hawk};
         for (IFlyer f: flyers){
             System.out.println("f = "+f);
             f.fly();
@@ -86,9 +76,10 @@ public class Main {
         Seagull skattl = new Seagull("Скаттл", 5,50);
         Koala koala = new Koala("Стив",9);
         Flamingo flamingo = new Flamingo("Фламинго",8,180,"Розовый");
+        Kangaroo kangaroo = new Kangaroo("Рита", 5);
 
 
-        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka, mishka,skattl,koala,flamingo};
+        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka, mishka, skattl, koala, flamingo, kangaroo};
         for (Animal a : animals)
             a.move();
 
@@ -98,13 +89,17 @@ public class Main {
         }
 
         for (Animal a : animals){
-            if (a instanceof IFlyer){
-                IFlyer f = (IFlyer) a;
+            if (a instanceof IFlyer f) {
                 f.fly();
             }
             if (a instanceof IDiver)
                 ((IDiver) a).dive();
 
+        }
+
+        for (Animal a : animals) {
+            IJumper j = (IJumper) a;
+            j.jump();
         }
     }
 }
