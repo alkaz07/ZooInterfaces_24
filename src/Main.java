@@ -42,8 +42,10 @@ public class Main {
         Dog sobaka = new Dog("пёс", 5);
         Colibri flit = new Colibri(" Колибри Флит",3,30);
         Kaban pyatak = new Kaban(" Кабан Пятак",5);
+        Whale willy = new Whale("Вилли", 47, 600);
+        Cuckoo cookie = new Cuckoo("Куки", 3, 20);
 
-        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka,flit,pyatak};
+        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka,flit,pyatak, willy, cookie};
         for (Animal a : animals)
             a.move();
 
