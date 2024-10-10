@@ -1,4 +1,9 @@
-public class Fox extends Animal implements IWalker{
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IWalker;
+
+public class Fox extends Animal implements IWalker {
     public double lengthFoxTail;
     public Fox(String name, int age, double lengthFoxTail) {
         super(name, age);
