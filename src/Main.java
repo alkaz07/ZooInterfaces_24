@@ -7,6 +7,7 @@ public class Main {
         example12();
     }
 
+    //by Sergei 2024.10.10 с целью тренировки
     private static void example12() {
         Duck duck = new Duck("Кряк", 1, 1);
         Eagle eagle1 = new Eagle("Орлан", 10, 120);
@@ -23,8 +24,10 @@ public class Main {
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Eagle orel = new Eagle("Орел-1", 7, 200);
         Penguin skiper = new Penguin("Шкипер", 4, 50);
+        //
         Seagull skattl = new Seagull("Скаттл",5,50);
         Flamingo flamingo = new Flamingo("Фламинго",8,180,"Розовый");
+        //
         Animal[] animals = {donald, zigzag, orel, skiper, sokol,skattl,flamingo};
 
 

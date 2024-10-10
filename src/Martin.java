@@ -21,6 +21,9 @@ public class Martin extends Bird implements IDiver, IFlyer{
 
     }
 
+    //by alkaz07   2024.10.10
+    //todo: переопредилить метод toString
+
 
     }
 
