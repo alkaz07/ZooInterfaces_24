@@ -28,3 +28,4 @@ public class Kaban extends Mammal implements IWalker, IRunner {
         }
     }
 }
+//
