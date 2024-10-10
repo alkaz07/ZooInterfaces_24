@@ -17,4 +17,15 @@ public class Woodpecker extends Bird implements IFlyer {
     public void fly() {
         System.out.println("Лечу и думаю, где бы постучать...");
     }
+
+    @Override
+    public void takeoff(String from) {
+        System.out.println("Взлетаю с " + from);
+    }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Приземляюсь на " + to);
+
+    }
 }
