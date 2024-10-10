@@ -1,4 +1,10 @@
-public class Lynx extends Animal implements IWalker,IDiver{
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IDiver;
+import zoo.IWalker;
+
+public class Lynx extends Animal implements IWalker, IDiver {
     public Lynx(String name, int age) {
         super(name, age);
     }

@@ -1,3 +1,7 @@
+package zoo.birds;
+
+import zoo.IFlyer;
+
 public class Cuckoo extends Bird implements IFlyer {
 
     public Cuckoo(String name, int age, double wingsSize) {

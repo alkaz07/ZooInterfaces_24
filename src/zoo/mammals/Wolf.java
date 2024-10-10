@@ -1,3 +1,8 @@
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IWalker;
+
 public class Wolf extends Animal implements IWalker {
     public Wolf(String name, int age) {
         super(name, age);
