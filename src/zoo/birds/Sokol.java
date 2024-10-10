@@ -14,4 +14,20 @@ public Sokol (String name, int age, double wingsSize) {
     public void fly() {
         System.out.println(this + " летит быстро");
     }
+
+    @Override
+    public void takeoff(String from) {
+        System.out.println("Сокол взлетает с земли в "+from);
+    }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Сокол приземляется на руку "+to);
+
+    }
+
+    @Override
+    public void travelByAir(String from, String to) {
+        IFlyer.super.travelByAir(from, to);
+    }
 }
