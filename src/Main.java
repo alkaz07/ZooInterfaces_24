@@ -2,18 +2,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-//        example1();
+        example1();
         //example2WithDucks();
-        example12();
-    }
-
-    private static void example12() {
-        Duck duck = new Duck("Кряк", 1, 1);
-        Eagle eagle1 = new Eagle("Орлан", 10, 120);
-        Ostrich straus = new Ostrich("Дылда с маоенькой головой", 10, 90, 250);
-        Bird[] birds = {duck, eagle1, straus };
-        for (Bird b: birds) if(b instanceof IWalker) System.out.println(b);
-
     }
 
     private static void example2WithDucks() {
@@ -22,12 +12,11 @@ public class Main {
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Eagle orel = new Eagle("Орел-1", 7, 200);
         Penguin skiper = new Penguin("Шкипер", 4, 50);
-        Seagull skattl = new Seagull("Скаттл",5,50);
-        Animal[] animals = {donald, zigzag, orel, skiper, sokol,skattl};
+        Animal[] animals = {donald, zigzag, orel, skiper, sokol};
 
 
 
-        IFlyer[] flyers = {donald, zigzag, orel,skattl};
+        IFlyer[] flyers = {donald, zigzag, orel};
         for (IFlyer f: flyers){
             System.out.println("f = "+f);
             f.fly();
@@ -51,11 +40,12 @@ public class Main {
         Eagle gorgo = new Eagle("Горго", 4, 150);
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Dog sobaka = new Dog("пёс", 5);
-        Bear mishka = new Bear("Мишка", 10);
-        Seagull skattl = new Seagull("Скаттл", 5,50);
+        Colibri flit = new Colibri(" Колибри Флит",3,30);
+        Kaban pyatak = new Kaban(" Кабан Пятак",5);
+        Whale willy = new Whale("Вилли", 47, 600);
+        Cuckoo cookie = new Cuckoo("Куки", 3, 20);
 
-
-        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka, mishka,skattl};
+        Animal[] animals = {gena, gorgo, lolo, sokol, sobaka,flit,pyatak, willy, cookie};
         for (Animal a : animals)
             a.move();
 
