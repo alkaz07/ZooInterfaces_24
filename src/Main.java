@@ -5,6 +5,7 @@ import zoo.IWalker;
 import zoo.birds.*;
 import zoo.mammals.Bear;
 import zoo.mammals.Dog;
+import zoo.mammals.Kaban;
 import zoo.mammals.Koala;
 import zoo.reptiles.Crocodile;
 
@@ -77,6 +78,7 @@ public class Main {
         Eagle gorgo = new Eagle("Горго", 4, 150);
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Dog sobaka = new Dog("пёс", 5);
+        Kaban pyatak = new Kaban("Пятак",5);
         Bear mishka = new Bear("Мишка", 10);
         Seagull skattl = new Seagull("Скаттл", 5,50);
         Koala koala = new Koala("Стив",9);
