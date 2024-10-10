@@ -1,4 +1,8 @@
-public class Seagull extends Bird implements IFlyer{
+package zoo.birds;
+
+import zoo.IFlyer;
+
+public class Seagull extends Bird implements IFlyer {
     public Seagull(String name, int age, double wingsSize) {
         super(name, age, wingsSize);
     }

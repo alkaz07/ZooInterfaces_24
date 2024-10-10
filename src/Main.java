@@ -1,12 +1,32 @@
+import zoo.Animal;
+import zoo.IDiver;
+import zoo.IFlyer;
+import zoo.IWalker;
+import zoo.birds.*;
+import zoo.mammals.Bear;
+import zoo.mammals.Dog;
+import zoo.mammals.Koala;
+import zoo.reptiles.Crocodile;
+
+
+
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        example1();
-        example2WithDucks();
-        example12();
+       // example1();
+       // example2WithDucks();
+       // example12();
+        example1010();
     }
 
+    private static void example1010() {
+        Cuckoo cuckoo = new Cuckoo("Машка",2, 32);
+      //  System.out.println(cuckoo.name);  //запрещено прямое обращение к полю name, потому что модификатор доступа protected и класс Animal находится в другом package
+        cuckoo.fly();
+    }
+
+    //by Sergei 2024.10.10 с целью тренировки
     private static void example12() {
         Duck duck = new Duck("Кряк", 1, 1);
         Eagle eagle1 = new Eagle("Орлан", 10, 120);
@@ -23,8 +43,10 @@ public class Main {
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Eagle orel = new Eagle("Орел-1", 7, 200);
         Penguin skiper = new Penguin("Шкипер", 4, 50);
+        //
         Seagull skattl = new Seagull("Скаттл",5,50);
         Flamingo flamingo = new Flamingo("Фламинго",8,180,"Розовый");
+        //
         Animal[] animals = {donald, zigzag, orel, skiper, sokol,skattl,flamingo};
 
 

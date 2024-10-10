@@ -1,4 +1,9 @@
-public class Bear extends Animal implements IWalker{
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IWalker;
+
+public class Bear extends Animal implements IWalker {
     public Bear(String name, int age) {
         super(name,age);
 
