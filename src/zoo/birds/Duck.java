@@ -26,6 +26,16 @@ public class Duck extends Bird implements IFlyer, IDiver, IWalker {
     }
 
     @Override
+    public void takeoff(String from) {
+        System.out.println("Утка взлетает с воды в "+from);
+    }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Утка изящно приземляется в "+to);
+    }
+
+    @Override
     public void walk() {
         System.out.println("Утка ходит по-утиному");
     }

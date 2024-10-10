@@ -15,4 +15,14 @@ public class Eagle extends Bird implements IFlyer {
     public void fly(){
         System.out.println(this + " летит");
     }
+
+    @Override
+    public void takeoff(String from) {
+        System.out.println("стремительно взлетает");
+    }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Орел поднимает тучу пыли при посадке");
+    }
 }

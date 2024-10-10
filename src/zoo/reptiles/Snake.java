@@ -1,7 +1,6 @@
 package zoo.reptiles;
-import zoo.IWalker;
 
-public class Snake extends Reptile  {
+public class Snake extends Reptile   {
     public Snake(String name, int age, double tailLength) {
         super(name, age, tailLength);
     }
