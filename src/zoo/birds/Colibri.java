@@ -17,6 +17,17 @@ public class Colibri extends Bird implements IFlyer {
 
         System.out.println(this + " очень быстро летает с ветки на ветку ");
         }
+
+    @Override
+    public void takeoff(String from) {
+        System.out.println("Колибри взлетает быстро и почти незаметно"+ from);
     }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Колибри садиться на ветку почти сразу же и очень плавно"+ to);
+    }
+}
+//
 //
 //
