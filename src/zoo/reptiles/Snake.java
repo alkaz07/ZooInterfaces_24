@@ -1,6 +1,9 @@
 package zoo.reptiles;
+import zoo.ICrawler;
 
-public class Snake extends Reptile   {
+
+
+public class Snake extends Reptile implements ICrawler {
     public Snake(String name, int age, double tailLength) {
         super(name, age, tailLength);
     }
