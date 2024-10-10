@@ -1,4 +1,8 @@
-public class Woodpecker extends Bird implements IFlyer{
+package zoo.birds;
+
+import zoo.IFlyer;
+
+public class Woodpecker extends Bird implements IFlyer {
     public Woodpecker(String name, int age, double wingsSize) {
         super(name, age, wingsSize);
     }

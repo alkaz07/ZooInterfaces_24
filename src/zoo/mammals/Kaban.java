@@ -1,3 +1,8 @@
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IWalker;
+
 public class Kaban extends Animal implements IWalker {
     public Kaban(String name, int age) {
         super(name, age);

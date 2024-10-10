@@ -1,3 +1,8 @@
+package zoo.birds;
+
+import zoo.IFlyer;
+import zoo.IWalker;
+
 public class Flamingo extends Bird implements IFlyer, IWalker {
     public String color;
 

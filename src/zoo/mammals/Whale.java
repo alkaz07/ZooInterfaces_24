@@ -1,3 +1,8 @@
+package zoo.mammals;
+
+import zoo.Animal;
+import zoo.IDiver;
+
 public class Whale extends Animal implements IDiver {
     public int bodyLength;
 

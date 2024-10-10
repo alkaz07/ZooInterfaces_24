@@ -1,4 +1,8 @@
-public class Ostrich extends Bird implements IWalker{
+package zoo.birds;
+
+import zoo.IWalker;
+
+public class Ostrich extends Bird implements IWalker {
     public double height;
 
     public Ostrich(String name, int age, double wingsSize, double height) {

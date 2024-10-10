@@ -1,4 +1,9 @@
-public class Martin extends Bird implements IDiver, IFlyer{
+package zoo.birds;
+
+import zoo.IDiver;
+import zoo.IFlyer;
+
+public class Martin extends Bird implements IDiver, IFlyer {
     public Martin(String name, int age, double wingsSize) {
         super(name, age, wingsSize);
     }
