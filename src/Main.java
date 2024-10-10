@@ -5,6 +5,7 @@ import zoo.IWalker;
 import zoo.birds.*;
 import zoo.mammals.Bear;
 import zoo.mammals.Dog;
+import zoo.mammals.Kaban;
 import zoo.mammals.Koala;
 import zoo.reptiles.Crocodile;
 
@@ -13,12 +14,15 @@ import zoo.reptiles.Crocodile;
 import zoo.birds.Bird;
 
 import java.util.Arrays;
-
+//1)
+//каждому добавить по классу рептилий или рыб или насекомых
+//2)
+//свой класс млекопитающего исправить, чтобы он наследовал Mammal а не Animal
 public class Main {
     public static void main(String[] args) {
-       // example1();
-       // example2WithDucks();
-       // example12();
+        example1();
+        example2WithDucks();
+        example12();
         example1010();
     }
 
@@ -77,6 +81,7 @@ public class Main {
         Eagle gorgo = new Eagle("Горго", 4, 150);
         Sokol sokol = new Sokol("Сокол", 2, 30);
         Dog sobaka = new Dog("пёс", 5);
+        Kaban pyatak = new Kaban("Пятак",5);
         Bear mishka = new Bear("Мишка", 10);
         Seagull skattl = new Seagull("Скаттл", 5,50);
         Koala koala = new Koala("Стив",9);
