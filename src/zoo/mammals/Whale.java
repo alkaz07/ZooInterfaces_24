@@ -3,7 +3,7 @@ package zoo.mammals;
 import zoo.Animal;
 import zoo.IDiver;
 
-public class Whale extends Animal implements IDiver {
+public class Whale extends Mammal implements IDiver {
     public int bodyLength;
 
     public Whale(String name, int age, int bodyLength) {
